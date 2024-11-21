@@ -55,7 +55,12 @@ def is_skin_image(image):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    #return render_template('index.html')
+    username = session.get('username')
+    if not username:
+        flash('You need to log in first.', 'danger')
+        return redirect(url_for('login'))
+    return render_template('index.html', username=username)
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
