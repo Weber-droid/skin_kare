@@ -116,22 +116,6 @@ def logout():
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @app.route('/results')
 def result():
     return render_template('results.html')
