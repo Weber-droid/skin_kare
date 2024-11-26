@@ -33,7 +33,7 @@ source venv/bin/activate
 ### 3. Install Dependencies
 
 ```bash
-pip install streamlit openai python-dotenv pandas
+pip install streamlit openai python-dotenv pandas hashlib
 ```
 
 ### 4. Configure API Key
@@ -48,7 +48,7 @@ OPENROUTER_API_KEY=your_openrouter_api_key_here
 ## Running the Application
 
 ```bash
-streamlit run medical_app.py
+streamlit run app.py
 ```
 
 ## Features
@@ -98,7 +98,4 @@ streamlit run medical_app.py
 
 MIT License
 
-## Contact
 
-[Your Name]
-[Your Email]
